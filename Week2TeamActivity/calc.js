@@ -7,24 +7,29 @@
 /***********************************************************/
 
 function readInput(){
-   let numberIn = document.getElementById("inputNumber").valueOf;
-
-   document.getElementById("dispay").innerHTML.display = numberIn.valueOf;
-
+    //console.log("in function readInput");
+   var  numberIn  = document.getElementById('inputNumber').value;
+    //console.log("numberIn : " + numberIn);
+    
+   var  outputNumber = document.getElementById('display1');
+   outputNumber.innerHTML = 'You entered: ' + numberIn;
+  
 }
 
 
-function sum(inputNumber){
+function sum(){
+    let  numberIn  = document.getElementById('inputSumNumber').value;
     let answer = 0;
-    let count = 1;
-    
-    if (count <= inputNumber) {
-        answer + count;
-        count + 1;
+   
+    if (!Number.isNaN(numberIn)) {
+        for (let count = 1; count <= numberIn; count++) {
+             answer += count;
+        }
+    } else {
+        answer = "Not a number";
     }
-    else {
-        break;
-    }
-    
-    document.getElementById('sumFunction').innerHTML.valueOf = answer;
+
+    var  outputNumber = document.getElementById('sumFunction');
+    outputNumber.innerHTML = 'Your sum: ' + answer; 
+   
 }
