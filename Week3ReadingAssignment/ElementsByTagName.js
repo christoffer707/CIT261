@@ -1,20 +1,20 @@
 
     // Your code here.
     function byTagName(node, tagName) {
-      var found = [];
+      var add = [];
       tagName = tagName.toUpperCase();
-      function explore(node) {
+      function find(node) {
         for (var i = 0; i < node.childNodes.length; i++) {
-          var child = node.childNodes[i];
-          if (child.nodeType == document.ELEMENT_NODE) {
-            if (child.nodeName == tagName)
-              found.push(child);
-            explore(child);
+          var next = node.childNodes[i];
+          if (next.nodeType == document.ELEMENT_NODE) {
+            if (next.nodeName == tagName)
+              add.push(next);
+            find(next);
           }
         }
       }
-      explore(node);
-      return found;
+      find(node);
+      return add;
   }
 
   console.log(byTagName(document.body, "h1").length);
