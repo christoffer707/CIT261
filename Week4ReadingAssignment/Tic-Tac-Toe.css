@@ -1,0 +1,47 @@
+/*****************************************************************/
+/* tictactoe.css for week 04 Ponder assignment                    */
+/* @author 		Dean Hall, Eric Okoro, Chris Hemming, Justin Hall */
+/* @version  	1.0                                               */
+/* @date: 		2019-04                                           */
+/*  CIT 261    Spring 2019 Semester                              */
+/*****************************************************************/
+
+.board {
+   display: flexbox;
+   align-content: center;
+   justify-content: center;
+   margin: 10px;
+   background-color: aqua;
+}
+
+.button {
+   font-size: 75px;
+   min-width: 90px;
+   min-height: 100px
+}
+
+.checkbox {
+   font-size: 75px;
+   min-width: 90px;
+   min-height: 100px
+}
+
+input:checked + label:before{
+    content: 'x';
+    color: 'green';
+}
+
+input:not(:checked) + label:before{
+    content: 'o';
+    color: 'red';
+}
+
+input {
+    position: absolute;
+    clip:rect(0,0,0,0);
+}
+
+input {
+    position: absolute;
+    clip:rect(0,0,0,0);
+}
