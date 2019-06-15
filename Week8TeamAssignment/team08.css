@@ -1,3 +1,19 @@
 .main {
-   background-color:rgb(187, 173, 156) ;
+   background-color:black ;
+   
 }
+
+li {
+   list-style-type: none;
+   color: white;
+   padding-left: 50px;
+}
+
+h1 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgb(206, 186, 12);
+   text-align: center;
+   box-shadow: 1px 1px 5px 5px;
+}
+
+

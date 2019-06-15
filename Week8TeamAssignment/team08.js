@@ -27,6 +27,7 @@ function getPeople(url) {
             console.log("#1  ",data);
             console.log("#2  ",data.count);
          
+         // Stretch #2 Goal
          setupPages(url, data.count);
 
             data.results.forEach(
@@ -37,7 +38,7 @@ function getPeople(url) {
                let nameSpan = document.createElement('span');
                nameSpan.textContent = people.name;
             
-               row.appendChild(nameSpan);
+               row.appendChild(nameSpan); // <li><span> $name </span></li>
                ul.appendChild(row);
 
             }
@@ -52,10 +53,10 @@ function getPeople(url) {
             //console.log("PreviousB  ", data.previous);
             document.querySelector('#prev').removeAttribute('disabled');
             document.querySelector('#prev').onclick = function() {
-               getPeople(data.previous);
                while (ul.hasChildNodes()){
                   ul.removeChild(ul.firstChild);
                }
+               getPeople(data.previous);
             }
          }
 
@@ -65,11 +66,10 @@ function getPeople(url) {
             //console.log("NextB     ", data.next);
             document.querySelector('#next').removeAttribute('disabled');
             document.querySelector('#next').onclick = function() {
-               getPeople(data.next);
                while (ul.hasChildNodes()){
                   ul.removeChild(ul.firstChild);
                }
-               
+               getPeople(data.next); 
             }
          }
                
@@ -105,9 +105,9 @@ function setupPages(url, count) {
          console.log("page id  ", id);
       let pageButton = document.createElement('button', 'id');
 
-      document.querySelector('#page' + i.toString() + '"').onclick = function() {
-         getPeople(data.next);
-      }
+      //document.querySelector('#page' + i.toString() + '"').onclick = function() {
+      //   getPeople(data.next);
+     // }
       //pageNum.innerHTML = '<a href=\'https://swapi.co/api/people/
    }
 
