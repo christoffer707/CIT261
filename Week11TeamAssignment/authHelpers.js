@@ -33,6 +33,10 @@ async function makeRequest(url, method = 'GET', body = null) {
 
   // not catching the error here...so we will need to catch it later on and handle it.
 }
+makeRequest('login', 'POST', {
+   password: 'user1',
+   email: 'user1@email.com'
+});
 
 
 
