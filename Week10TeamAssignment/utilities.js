@@ -1,26 +1,22 @@
-
-
-//function getJSON(url)  
-export function getJSON(url) {
+function getJSON(url) {
   return fetch(url)
-    .then( function(response) {
-      if (!response.ok) {
-        throw Error(response.statusText);
-      } else {
-         //console.log(response.json());
-        return response.json();
-      }
-    })
-    .catch(function(error) {
-      console.log(error);
+      .then( (response) => {
+          if (!response.ok) {
+              throw Error(response.statusText);
+          } else {
+              return response.json();
+          }
+      })
+      .catch(function(error) {
+          console.log(error);
+      });
+}
+  
+  
+const getLocation = function(options) {
+    return new Promise(function(resolve, reject) {
+        navigator.geolocation.getCurrentPosition(resolve, reject, options);
     });
-};
-
-
-export const getLocation = function(options) {
-  return new Promise(function(resolve, reject) {
-      navigator.geolocation.getCurrentPosition(resolve, reject, options);
-  });
-};
-
-
+}; 
+  
+export { getJSON, getLocation }; 

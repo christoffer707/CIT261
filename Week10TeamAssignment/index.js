@@ -1,8 +1,5 @@
-/*jslint es6: true  */
 
-import {getLocation} from 'utilities';
-import {getJSON} from 'utilities';
-
+import { getJSON, getLocation } from "./utilities.js";
 
 var baseUrl ='https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2019-01-01&endtime=2019-02-02';
 
@@ -20,12 +17,14 @@ getLocation()
    getJSON(baseUrl)
       .then( (result) => {
          console.log(result);
-         result.features.forEach((features) => {
+         var ul = document.querySelector('#quakeList');
+         result.features.forEach((features) => {   
             var li = document.createElement('li');
             li.textContent = features.properties.place;
+            ul.appendChild(li);
          });
-         ul.appendChild(li);
-      }) 
+         
+      })
 });
 
 
