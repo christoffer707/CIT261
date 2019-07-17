@@ -1,18 +1,18 @@
 body{
-    background-color:deepskyblue;
+    background-color:rgb(184, 142, 142);
 }
 
 h1 {
     text-align: center;
     font-family: Cooper;
     font-size: large;
-    color: darkred;
+    color: rgb(21, 0, 139);
 }
 h3 {
     text-align: center;
     font-family: Cooper;
     font-size: medium;
-    color: darkslateblue;
+    color: rgb(139, 79, 61);
 }
 p{
     text-align: center;
@@ -27,11 +27,10 @@ table{
 
 
 span#restart:active{
-    color:springgreen;
+    color:yellow;
 }
 
 div#memory_board {
-    background: url(Mario_bg.png) no-repeat center;
     border: #000 1px solid;
     margin: auto;
     width: 320px;
@@ -45,7 +44,6 @@ div#memory_board {
 .flip3d {
 }
     .flip3d > .front {
-        background: url(Paper_Mario_Cards.png) no-repeat center;
         background-color: royalblue;
         background-size: 50px;
         border: #000 1px solid;
