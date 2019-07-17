@@ -15,7 +15,10 @@ body{
 }
 
 #answer{
-    border: 12px;
+    border: 1px;
     padding: 17px;
     border-color: rgb(0, 0, 0);
+    border-style: solid;
+    margin-left: 600px;
+    margin-right: 600px;
 }
