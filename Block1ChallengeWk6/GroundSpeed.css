@@ -15,7 +15,7 @@ body{
 }
 
 #answer{
-    border-color: black;
     border: 12px;
     padding: 17px;
+    border-color: rgb(0, 0, 0);
 }
