@@ -9,19 +9,21 @@
     <script src="GroundSpeed.js"></script>
 </head>
 <body>
-    <h1 name="Title">Ground Speed From True Air Speed</h1>
-    <h3 name="airspeed">What is Your Air Speed?</h3>
-    <input type="text" class="user" id="airinput">
-    <h3 name="windspeed">What is Your Wind Speed?</h3>
-    <input type="text" class="user" id="windinput">
-    <h3 name="angle">At what angle is the plane flying?</h3>
-    <input type="text" class="user" id="angleinput">
-    <h3 name="dirtitle">Wind Direction</h3>
-    <label for="headwind1">Headwind</label>
-    <input type="radio" name="windDirection" value="-1" id="headwind1">
-    <label for="tailwind0">Tailwind</label>
-    <input type="radio" name="windDirection" value="1" id="tailwind0">
-    <button onclick="Calculation()">Calculate</button>
-    <div id="answer"></div>
+    <h1 id="Title">Ground Speed From True Air Speed</h1>
+   <div id="calc">
+        <h3 name="airspeed">What is Your Air Speed?</h3>
+        <input type="text" class="user" id="airinput">
+        <h3 name="windspeed">What is Your Wind Speed?</h3>
+        <input type="text" class="user" id="windinput">
+        <h3 name="angle">At what angle is the plane flying?</h3>
+        <input type="text" class="user" id="angleinput">
+        <h3 name="dirtitle">Wind Direction</h3>
+        <label for="headwind1">Headwind</label>
+        <input type="radio" name="windDirection" value="-1" id="headwind1">
+        <label for="tailwind0">Tailwind</label>
+        <input type="radio" name="windDirection" value="1" id="tailwind0">
+        <button onclick="Calculation()">Calculate</button>
+        <div id="answer"></div>
+    </div>
 </body>
 </html>

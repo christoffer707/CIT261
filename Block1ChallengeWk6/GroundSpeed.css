@@ -1,0 +1,20 @@
+body{
+    background-image: url(airplane-breaking-the-sound-barrier-2.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+}
+
+#Title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+#calc{
+    font-weight: bold;
+}
+
+#answer{
+    border: 12px;
+    padding: 17px;
+}
